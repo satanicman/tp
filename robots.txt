@@ -1,0 +1,13 @@
+User-agent:*
+
+Disallow: */cart/
+Disallow: */my-account/
+Disallow: */tag/
+Disallow: */cart?*
+
+User-agent: MJ12bot
+Disallow: /
+
+
+Host: https://techprime.com.ua
+Sitemap: https://techprime.com.ua/1_ru_0_sitemap.xml

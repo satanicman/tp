@@ -1,0 +1,5 @@
+﻿id_order;Код;"Способ оплаты";"Итого к оплате";Валюта;"Дата добавления";"Дата изменения";Доставка;"Статус заказа";"Срок доставки";"Срок доставки"
+1;XKBKNABJK;"Payment by check";55.000000;RUB;"2015-11-24 03:24:20";"2015-11-24 03:24:20";"My carrier";Отклонено;"Delivery next day!";"North America"
+2;OHSATSERP;"Payment by check";75.900000;RUB;"2015-11-24 03:24:20";"2015-11-24 03:24:20";"My carrier";"Ожидание платежа по квитанции";"Delivery next day!";"North America"
+3;UOYEVOLI;"Payment by check";76.010000;RUB;"2015-11-24 03:24:20";"2015-11-24 03:24:20";"My carrier";"Ошибка оплаты";"Delivery next day!";"North America"
+5;KHWLILZLL;"Bank wire";71.510000;RUB;"2015-11-24 03:24:20";"2015-11-26 04:17:07";"My carrier";Отправлено;"Delivery next day!";"North America"

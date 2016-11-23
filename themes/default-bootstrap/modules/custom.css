@@ -1,0 +1,144 @@
+header{
+	padding-bottom: 0;
+}
+.header-bg{
+	height: 56px;
+    background: linear-gradient(to top, #2b81ac, #3399cc);
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+header .nav {
+    background: #f4f4f4;
+    border-bottom: 2px solid #3399cc;
+}
+.header_user_info{
+	border: none;
+}
+.header_user_info a{
+	color: #3399cc;
+	padding: 10px 9px 8px 24px;
+    background: 1px url("../img/arrow.png") no-repeat;
+}
+.header_user_info a:hover{
+    background: 1px url("../img/arrow.png") no-repeat;
+}
+.dispNavMnu {
+    display: inline-block;
+    margin-top: 10px;
+}
+.dispNavMnu a {
+    color: black;
+    padding-left: 45px;
+}
+.dispNavMnu a:hover{
+	color: #3399cc;
+}
+.hmnu1{
+	background: 25px url("../img/icon-mnu-1.svg") no-repeat;
+	background-size: contain;
+}
+.hmnu2{
+	background: 25px url("../img/icon-mnu-2.svg") no-repeat;
+	background-size: contain;
+}
+.hmnu3{
+	background: 25px url("../img/icon-mnu-3.svg") no-repeat;
+	background-size: contain;
+}
+.hmnu4{
+	background: 25px url("../img/icon-mnu-4.svg") no-repeat;
+	background-size: contain;
+}
+.hmnu5{
+	background: 25px url("../img/icon-mnu-5.svg") no-repeat;
+	background-size: contain;
+}
+.hmnu6{
+	background: 25px url("../img/icon-mnu-6.svg") no-repeat;
+	background-size: contain;
+}
+.hmnu7{
+	background: 25px url("../img/icon-mnu-7.svg") no-repeat;
+	background-size: contain;
+}
+.hmnu8{
+	background: 25px url("../img/icon-mnu-8.png") no-repeat;
+	background-size: contain;
+}
+header .row #header_logo{
+	width: 25%;
+}
+#search_block_top{
+	width: 27%;
+}
+#search_block_top #search_query_top {
+    padding: 3px 60px 3px 13px;
+    height: 30px;
+}
+#search_block_top .btn.button-search {
+    background: linear-gradient(to top, #c0f000, #ccff00);
+    color: black;
+    width: 50px;
+    padding: 2px 0 4px 0;
+}
+.ct-phone{
+	width: 260px;
+    float: left;
+    margin-top: 43px;
+    color: #bfef00;
+    padding-left: 45px;
+    background: 5px 5px url("../img/phone.png") no-repeat;
+}
+.ct-phone .callme_viewform{
+    color: #bfef00;
+    text-decoration: underline;
+}
+#header .shopping_cart {
+    padding-top: 41px;
+}
+/*---------------------------------------------- MAIN MENU -----*/
+.sf-menu{
+	border-bottom: none;
+	background: linear-gradient(to top, #2b81ac, #3399cc);
+}
+.sf-menu > li{
+	margin-bottom: 0px;
+	border-right: 1px solid #236282;
+}
+.sf-menu > li > a{
+	border-bottom: none;
+	color: white;
+	text-shadow: 0 0 15px white;
+}
+/*---------------------------------------------- SLIDER --------*/
+#top_column{
+	padding-left: 0;
+	padding-right: 0;
+}
+#slider_row{
+	margin-left: 0;
+	margin-right: 0;
+}
+#homepage-slider {
+    border-bottom: 3px solid #ccff00;
+}
+#homepage-slider .homeslider-description{
+    left: 27%;
+    width: 600px;
+	text-align: center;
+}
+#homepage-slider .homeslider-description p{
+	width: 100%;
+	margin-top: 10px;
+}
+.sl-span-green{
+	background-color: #ccff00;
+	padding: 5px 20px;
+	color: #333333;
+}
+.sl-span-blue{
+	background-color: #3399cc;
+	padding: 10px;
+}

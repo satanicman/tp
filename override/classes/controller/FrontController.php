@@ -31,6 +31,7 @@ class FrontController extends FrontControllerCore
         parent::setMedia();
         $this->addJS('https://static.addtoany.com/menu/page.js');
         $this->addJS(_THEME_JS_DIR_.'jquery.maskedinput.min.js');
+        $this->addCSS(_THEME_CSS_DIR_.'sprite.css');
 
         return true;
     }

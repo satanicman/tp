@@ -637,6 +637,19 @@ a.remove-after::after {
     display: none !important;
 }
 
+.sub-title {
+    color: #474747;
+    font-family: "RalewayBold";
+    font-size: 24px;
+    font-weight: 700;
+}
+.sub-title:not(.reason-title) {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .home-h3 {
     text-align: center;
     text-transform: uppercase;

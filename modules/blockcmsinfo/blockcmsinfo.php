@@ -339,6 +339,11 @@ class Blockcmsinfo extends Module
 		return $fields_value;
 	}
 
+	public function hookHomeBottom($params)
+	{
+	    return $this->hookHome($params);
+    }
+
 	public function hookHome($params)
 	{
 		$this->context->controller->addCSS($this->_path.'style.css', 'all');

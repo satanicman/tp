@@ -1061,14 +1061,25 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
 }
 
 /*---------------------------------------  CMS info -------*/
+#cmsinfo_block p {
+    margin: 0;
+}
+#cmsinfo_block > div {
+    padding: 110px 0 55px;
+}
 #cmsinfo_block {
-    min-height: 100px;
+    min-height: 0;
     height: auto;
     border: none;
-    background: white;
+    background: none;
     padding-right: 0;
     padding-left: 0;
-    padding-bottom: 15px;
+    color: #333;
+    font-family: "RalewayRegular", serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
 }
 
 #cmsinfo_block h2 {

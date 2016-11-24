@@ -24,6 +24,7 @@
 */
 
 $(document).ready(function(){
+	animation();
 	$('#home-page-tabs li:first, #index .tab-content ul:first').addClass('active');
 	$('.slick.manufacturer').slick({
 		infinite: true,
@@ -39,4 +40,22 @@ $(document).ready(function(){
 		prevArrow: '<button type="button" class="slick-prev"><i class="icon news-prev-icon"></i></button>',
 		nextArrow: '<button type="button" class="slick-next"><i class="icon news-next-icon"></i></button>'
 	});
+	$(window).scroll(function() {
+		animation();
+	});
 });
+
+function animation() {
+	var block = $('.animation_block'),
+		wTop = $(window).scrollTop() - 50,
+		outerHeight = $(window).outerHeight();
+	block.children('.noactive, .active').each(function() {
+		var that = $(this),
+			top = that.offset().top
+			eHeight = that.outerHeight();
+		if((wTop >= top || (wTop + outerHeight) >= top))
+			that.removeClass('noactive').addClass('active');
+		else
+			that.removeClass('active').addClass('noactive');
+	});
+}

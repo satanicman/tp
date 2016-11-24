@@ -58,6 +58,16 @@ header {
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "RalewaySemiBold";
+    src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot");
+    src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"),
+    url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 #header .cart_block .cart-buttons {
     background: white;
 }
@@ -1066,63 +1076,6 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
     font-weight: bold;
 }
 
-/*-----------------------------------------  LATEST NEWS -----*/
-.sdstitle_block {
-    background: none;
-    border: none;
-    text-align: center;
-    color: #474747;
-    font-weight: bold;
-    font-size: 23px;
-}
-
-.sdstitle_block:after {
-    content: "";
-    width: 320px;
-    height: 1px;
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: 45px;
-    background: #474747;
-}
-
-.news_module_image_holder img {
-    width: 95%;
-}
-
-.latest-news-date {
-    color: #e0e0e0;
-}
-
-#sds_blog_post .sds_post_title {
-    color: #434343;
-}
-
-#sds_blog_post p {
-    text-align: justify;
-}
-
-#sds_blog_post > a {
-    color: #3399cc;
-}
-
-#sds_blog_post:first-child {
-    padding-left: 0;
-    padding-right: 14px;
-}
-
-#sds_blog_post:last-child {
-    padding-left: 14px;
-    padding-right: 0;
-}
-
-#sds_blog_post {
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-/*----------------------------------------  PRODUCT --------*/
 .b1c-submit:active,
 button.b1c:active {
     margin: 0px auto 0 !important;

@@ -1,5 +1,6 @@
+<?php
 /*
-* 2007-2016 PrestaShop
+* 2007-2012 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,25 +19,17 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2016 PrestaShop SA
+*  @copyright  2007-2012 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 */
-
-$(document).ready(function(){
-	$('#home-page-tabs li:first, #index .tab-content ul:first').addClass('active');
-	$('.slick.manufacturer').slick({
-		infinite: true,
-		slidesToShow: 7,
-		slidesToScroll: 1,
-		prevArrow: '<button type="button" class="slick-prev"><i class="icon manufacturer-prev-icon"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="icon manufacturer-next-icon"></i></button>'
-	});
-	$('.slick.news').slick({
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		prevArrow: '<button type="button" class="slick-prev"><i class="icon news-prev-icon"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="icon news-next-icon"></i></button>'
-	});
-});
+				    	
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
+						
+header("Cache-Control: no-store, no-cache, must-revalidate");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+						
+header("Location: ../");
+exit;

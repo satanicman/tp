@@ -32,6 +32,10 @@ class FrontController extends FrontControllerCore
         $this->addJS('https://static.addtoany.com/menu/page.js');
         $this->addJS(_THEME_JS_DIR_.'jquery.maskedinput.min.js');
         $this->addCSS(_THEME_CSS_DIR_.'sprite.css');
+        // slick
+        $this->addJS(_THEME_JS_DIR_.'slick.min.js');
+        $this->addCSS(_THEME_CSS_DIR_.'slick.css');
+        $this->addCSS(_THEME_CSS_DIR_.'slick-theme.css');
 
         return true;
     }

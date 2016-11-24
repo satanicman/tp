@@ -1,21 +1,3 @@
-/*
-Icon classes can be used entirely standalone. They are named after their original file names.
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon home"></i>
-*/
 .footer-search-icon {
   background-image: url(../img/sprite.png);
   background-position: -207px -111px;
@@ -24,13 +6,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .manufacturer-next-icon {
   background-image: url(../img/sprite.png);
-  background-position: -227px -137px;
+  background-position: -251px -137px;
   width: 5px;
   height: 9px;
 }
 .manufacturer-prev-icon {
   background-image: url(../img/sprite.png);
-  background-position: -237px -137px;
+  background-position: -261px -137px;
   width: 5px;
   height: 9px;
 }
@@ -39,6 +21,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: -207px -137px;
   width: 15px;
   height: 15px;
+}
+.news-next-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -239px -137px;
+  width: 7px;
+  height: 11px;
+}
+.news-prev-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -227px -137px;
+  width: 7px;
+  height: 11px;
 }
 .news-search-icon {
   background-image: url(../img/sprite.png);

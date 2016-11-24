@@ -33,3 +33,21 @@
 {if isset($HOOK_HOME) && $HOOK_HOME|trim}
 	<div class="clearfix">{$HOOK_HOME}</div>
 {/if}
+{capture name='homeNews'}{hook h='homeNews'}{/capture}
+{if $smarty.capture.homeNews}
+	</div></div></div></div>
+<h2 class='home-h3'>{l s='Последние статьи' mod='smartbloghomelatestnews'}</h2>
+<div class="homeNews-wrap">
+	<div class="homeNews-container container">
+		{$smarty.capture.homeNews}
+	</div>
+</div>
+<div class="columns-container">
+	<div id="columns" class="container">
+		<div class="row">
+			<div id="center_column" class="center_column col-xs-12 col-sm-12">
+{/if}
+{capture name='homeBottom'}{hook h='homeBottom'}{/capture}
+{if $smarty.capture.homeBottom}
+	{$smarty.capture.homeBottom}
+{/if}

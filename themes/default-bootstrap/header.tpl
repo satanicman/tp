@@ -114,7 +114,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="nav">
 							<div class="container">
 								<div class="row">
-									<nav>{$smarty.capture.displayNav}</nav>
+									<nav class="clearfix">{$smarty.capture.displayNav}</nav>
 								</div>
 							</div>
 						</div>

@@ -4,7 +4,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 Example usage in HTML:
 
 `display: block` sprite:
-<div class="icon-home"></div>
+<div class="home"></div>
 
 To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
 
@@ -14,75 +14,75 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 
 // HTML
-<i class="icon icon-home"></i>
+<i class="icon home"></i>
 */
-.icon-footer-search-icon {
+.footer-search-icon {
   background-image: url(../img/sprite.png);
   background-position: -207px -111px;
   width: 26px;
   height: 21px;
 }
-.icon-manufacturer-next-icon {
+.manufacturer-next-icon {
   background-image: url(../img/sprite.png);
   background-position: -227px -137px;
   width: 5px;
   height: 9px;
 }
-.icon-manufacturer-prev-icon {
+.manufacturer-prev-icon {
   background-image: url(../img/sprite.png);
   background-position: -237px -137px;
   width: 5px;
   height: 9px;
 }
-.icon-news-link-icon {
+.news-link-icon {
   background-image: url(../img/sprite.png);
   background-position: -207px -137px;
   width: 15px;
   height: 15px;
 }
-.icon-news-search-icon {
+.news-search-icon {
   background-image: url(../img/sprite.png);
   background-position: -262px -111px;
   width: 15px;
   height: 15px;
 }
-.icon-reason1-icon {
+.reason1-icon {
   background-image: url(../img/sprite.png);
   background-position: -104px 0px;
   width: 98px;
   height: 87px;
 }
-.icon-reason2-icon {
+.reason2-icon {
   background-image: url(../img/sprite.png);
   background-position: 0px -100px;
   width: 79px;
   height: 108px;
 }
-.icon-reason3-icon {
+.reason3-icon {
   background-image: url(../img/sprite.png);
   background-position: -207px 0px;
   width: 78px;
   height: 106px;
 }
-.icon-reason4-icon {
+.reason4-icon {
   background-image: url(../img/sprite.png);
   background-position: 0px -213px;
   width: 127px;
   height: 60px;
 }
-.icon-reason5-icon {
+.reason5-icon {
   background-image: url(../img/sprite.png);
   background-position: -104px -92px;
   width: 92px;
   height: 92px;
 }
-.icon-reason6-icon {
+.reason6-icon {
   background-image: url(../img/sprite.png);
   background-position: 0px 0px;
   width: 99px;
   height: 95px;
 }
-.icon-sign-icon {
+.sign-icon {
   background-image: url(../img/sprite.png);
   background-position: -238px -111px;
   width: 19px;

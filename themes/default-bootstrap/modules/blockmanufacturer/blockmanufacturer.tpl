@@ -25,25 +25,25 @@
 
 <!-- Block manufacturers module -->
 <div id="manufacturers_block_left" class="block blockmanufacturer">
-	<p class="title_block">
-		{if $display_link_manufacturer}
-			<a href="{$link->getPageLink('manufacturer')|escape:'html':'UTF-8'}" title="{l s='Manufacturers' mod='blockmanufacturer'}">
-		{/if}
-				{l s='Manufacturers' mod='blockmanufacturer'}
-		{if $display_link_manufacturer}
-			</a>
-		{/if}
+	<p class="home-h3">
+		{*{if $display_link_manufacturer}*}
+			{*<a href="{$link->getPageLink('manufacturer')|escape:'html':'UTF-8'}" title="{l s='Manufacturers' mod='blockmanufacturer'}">*}
+		{*{/if}*}
+				{l s='Мы сотрудничаем:' mod='blockmanufacturer'}
+		{*{if $display_link_manufacturer}*}
+			{*</a>*}
+		{*{/if}*}
 	</p>
-	<div class="block_content list-block">
+	<div class="">
 		{if $manufacturers}
 			{if $text_list}
-			<ul>
+			<ul class="slick manufacturer">
 				{foreach from=$manufacturers item=manufacturer name=manufacturer_list}
 					{if $smarty.foreach.manufacturer_list.iteration <= $text_list_nb}
 					<li class="{if $smarty.foreach.manufacturer_list.last}last_item{elseif $smarty.foreach.manufacturer_list.first}first_item{else}item{/if}">
 						<a 
 						href="{$link->getmanufacturerLink($manufacturer.id_manufacturer, $manufacturer.link_rewrite)|escape:'html':'UTF-8'}" title="{l s='More about %s' mod='blockmanufacturer' sprintf=[$manufacturer.name]}">
-							{$manufacturer.name|escape:'html':'UTF-8'}
+							<img src="{$img_manu_dir}{$manufacturer.id_manufacturer}.jpg" alt="{$manufacturer.name|escape:'html':'UTF-8'}">
 						</a>
 					</li>
 					{/if}

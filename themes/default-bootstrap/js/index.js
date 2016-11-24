@@ -25,4 +25,11 @@
 
 $(document).ready(function(){
 	$('#home-page-tabs li:first, #index .tab-content ul:first').addClass('active');
+	$('.slick.manufacturer').slick({
+		infinite: true,
+		slidesToShow: 7,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-prev"><i class="icon manufacturer-prev-icon"></i></button>',
+		nextArrow: '<button type="button" class="slick-next"><i class="icon manufacturer-next-icon"></i></button>'
+	});
 });

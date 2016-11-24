@@ -100,6 +100,11 @@ class BlockManufacturer extends Module
 		return $this->hookLeftColumn($params);
 	}
 
+	public function hookHome($params)
+	{
+		return $this->hookLeftColumn($params);
+	}
+
 	public function getContent()
 	{
 		$output = '';

@@ -16,11 +16,24 @@
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 * International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="home_categories col-md-12">
+<div class="home_categories">
    {* <h2>{l s='Categories' mod='homecategories'}</h2>*}
-    {if isset($categories) AND $categories}
-        <div id="subcategories">
-            {include file="$tpl_dir./subcategory.tpl" subcategories=$categories}
+    {if isset($subcategories) AND $subcategories}
+        <div id="subcategories_home">
+            <h3 class="sub-title">{l s="В нашем интернет-магазине вы найдете:" mod="homecategories"}</h3>
+            <ul class="clearfix row">
+                {foreach from=$subcategories item=subcategory}
+                    <li class="col-lg-3">
+                        <a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}" title="{$subcategory.name|escape:'html':'UTF-8'}" class="img">
+                            {$subcategory.name}
+                        </a>
+                        <div class="img_wrap">
+                            <img src="{$link->getCatImageLink($subcategory.link_rewrite, $subcategory.id_image)|escape:'html':'UTF-8'}"
+                                 alt="{$subcategory.name|escape:'html':'UTF-8'}">
+                        </div>
+                    </li>
+                {/foreach}
+            </ul>
         </div>
     {else}
         <p>{l s='No categories' mod='homecategories'}</p>

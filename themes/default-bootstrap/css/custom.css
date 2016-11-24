@@ -1908,6 +1908,33 @@ a.add_to_compare:hover {
     height: 230px;
 }
 
+#subcategories_home a {
+    color: #333;
+    font-family: "Open Sans", serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 7px;
+    display: block;
+    text-align: center;
+}
+#subcategories_home li {
+    min-height: 285px;
+    padding: 30px 15px;
+}
+#subcategories_home .img_wrap {
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 10px rgba(27, 160, 226, 0.4);
+}
+#subcategories_home img {
+    max-width: 100%;
+    max-height: 205px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 #footer #search_block_top #searchbox #search_query_top::-webkit-input-placeholder {
     color: #fbfbfb;
 }

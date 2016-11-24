@@ -56,10 +56,15 @@ class Homecategories extends Module
 
     public function hookDisplayHome($params)
     {
-        $root_cat = Category::getRootCategory($this->context->cookie->id_lang);
+        $root_cat = new Category(45, $this->context->language->id, $this->context->shop->id);
+        $subcategories = $root_cat->getSubCategories($this->context->cookie->id_lang);
+        foreach ($subcategories as $key => $subcategory) {
+            if($subcategory['id_category'] === '122')
+                unset($subcategories[$key]);
+        }
         $this->context->smarty->assign(
             array(
-                'categories' => $root_cat->getSubCategories($this->context->cookie->id_lang)
+                'subcategories' => $subcategories
             )
         );
 

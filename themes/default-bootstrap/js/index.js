@@ -31,14 +31,42 @@ $(document).ready(function(){
 		slidesToShow: 7,
 		slidesToScroll: 1,
 		prevArrow: '<button type="button" class="slick-prev"><i class="icon manufacturer-prev-icon"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="icon manufacturer-next-icon"></i></button>'
+		nextArrow: '<button type="button" class="slick-next"><i class="icon manufacturer-next-icon"></i></button>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 541,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 	$('.slick.news').slick({
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		prevArrow: '<button type="button" class="slick-prev"><i class="icon news-prev-icon"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="icon news-next-icon"></i></button>'
+		nextArrow: '<button type="button" class="slick-next"><i class="icon news-next-icon"></i></button>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 	$(window).scroll(function() {
 		animation();

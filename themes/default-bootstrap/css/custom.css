@@ -2589,6 +2589,18 @@ ul.product_list.list .features-popup {
 }
 
 @media (max-width: 480px) {
+    #reasons > li {
+        display: block;
+    }
+    #reasons .i-wrap {
+        float: none;
+        /*display: block;*/
+        margin: 0 auto;
+    }
+    .reason-description {
+        padding: 5px 0;
+        float: none;
+    }
     .dispNavMnu > li {
         height: auto;
         float: none;

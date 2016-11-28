@@ -46,6 +46,7 @@ $(document).ready(function(){
 });
 
 function animation() {
+	console.log('test');
 	var block = $('.animation_block'),
 		wTop = $(window).scrollTop() - 50,
 		outerHeight = $(window).outerHeight();

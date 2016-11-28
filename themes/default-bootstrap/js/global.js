@@ -156,7 +156,7 @@ $(document).ready(function () {
     $('#comstars').append($('#comstarsfrom'));
 
     var winheight = $(window).height() - 520;
-    $('#page .columns-container').css("min-height", winheight);
+    $('#page .columns-container').filter(':first').css("min-height", winheight);
 
     $(" #block_top_menu > ul > li > ul li > a").each(function () {
         if ($(this).siblings().length == 0) {

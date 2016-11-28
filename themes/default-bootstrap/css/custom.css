@@ -194,28 +194,32 @@ header .nav {
     order: 2;
 }
 
-.header_user_info a:before {
-    content: "";
-    display: inline-block;
-    min-height: inherit;
-    height: 100%;
-    vertical-align: middle;
-}
 .header_user_info a {
-    font-family: "RalewayRegular", serif;
+    /*font-family: "RalewayRegular", serif;*/
     color: #39c;
-    font-size: 14px;
-    font-weight: 400;
+    /*font-size: 14px;*/
+    font-weight: 600;
     line-height: 1;
     padding: 0;
+    display: -webkit-flex;
+    display:  -webkit-box;
+    display:  -ms-flexbox;
+    display:         flex;
+    -webkit-align-items: center;
+      -webkit-box-align: center;
+         -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: flex-end;
+           -webkit-box-pack: flex-end;
+            justify-content: flex-end;
+              -ms-flex-pack: flex-end;
 }
 .header_user_info a > span {
-    display: inline-block;
-    vertical-align: middle;
+    white-space: nowrap;
 }
+
 .header_user_info .icon {
-    margin-right: 13px;
-    vertical-align: middle;
+    margin-right: 5px;
 }
 
 .dispNavMnu {
@@ -237,10 +241,10 @@ header .nav {
 
 .dispNavMnu a {
     color: black;
-    font-family: "RalewayRegular", serif;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
+    /*font-family: "RalewayRegular", serif;*/
+    /*font-size: 12px;*/
+    /*font-weight: 400;*/
+    /*text-transform: uppercase;*/
     display: -webkit-flex;
     display:  -webkit-box;
     display:  -ms-flexbox;
@@ -345,6 +349,10 @@ header .row #header_logo {
     color: black;
     padding-left: 45px;
     background: 5px 5px url("../img/phone.png") no-repeat;
+}
+.ct-phone > p {
+    max-width: 50%;
+    white-space: nowrap;
 }
 
 .ct-phone .callme_viewform {
@@ -607,6 +615,8 @@ a.remove-after::after {
 #homepage-slider {
     border-bottom: 3px solid #ccff00;
     margin-bottom: 0;
+    height: 429px;
+    overflow: hidden;
 }
 
 #homepage-slider .homeslider-description {
@@ -1061,25 +1071,17 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
 }
 
 /*---------------------------------------  CMS info -------*/
-#cmsinfo_block p {
-    margin: 0;
-}
 #cmsinfo_block > div {
-    padding: 110px 0 55px;
+    /*padding: 110px 0 55px;*/
 }
 #cmsinfo_block {
-    min-height: 0;
+    min-height: 100px;
     height: auto;
     border: none;
-    background: none;
+    background: white;
     padding-right: 0;
     padding-left: 0;
-    color: #333;
-    font-family: "RalewayRegular", serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
+    padding-bottom: 15px;
 }
 
 #cmsinfo_block h2 {
@@ -1886,6 +1888,8 @@ a.add_to_compare:hover {
 }
 
 #subcategories_home a {
+    height: 34px;
+    overflow: hidden;
     color: #333;
     font-family: "Open Sans", serif;
     font-size: 17px;
@@ -1900,13 +1904,26 @@ a.add_to_compare:hover {
     padding: 30px 15px;
 }
 #subcategories_home .img_wrap {
+    display: -webkit-flex;
+    display:  -webkit-box;
+    display:  -ms-flexbox;
+    display:         flex;
+    -webkit-align-items: center;
+      -webkit-box-align: center;
+         -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+                -ms-flex-pack: distribute;
+    height: 186px;
     text-align: center;
     border: 1px solid #ccc;
     box-shadow: 0 5px 10px rgba(27, 160, 226, 0.4);
+    overflow: hidden;
 }
 #subcategories_home img {
     max-width: 100%;
-    max-height: 205px;
+    max-height: 100%;
     height: auto;
     display: inline-block;
     vertical-align: middle;

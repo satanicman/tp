@@ -1888,8 +1888,6 @@ a.add_to_compare:hover {
 }
 
 #subcategories_home a {
-    height: 34px;
-    overflow: hidden;
     color: #333;
     font-family: "Open Sans", serif;
     font-size: 17px;
@@ -1899,9 +1897,19 @@ a.add_to_compare:hover {
     display: block;
     text-align: center;
 }
+.home_categories_name {
+    display: inline-block;
+    height: 34px;
+    overflow: hidden;
+}
+#subcategories_home li:hover {
+    border-color: #3399cc;
+    box-shadow: 0 6px 30px #3399cc;
+}
 #subcategories_home li {
     min-height: 285px;
     padding: 30px 15px;
+    border: 1px solid transparent;
 }
 #subcategories_home .img_wrap {
     display: -webkit-flex;

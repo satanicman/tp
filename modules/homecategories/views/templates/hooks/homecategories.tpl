@@ -24,13 +24,15 @@
             <ul class="clearfix row">
                 {foreach from=$subcategories item=subcategory}
                     <li class="col-lg-3">
-                        <a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}" title="{$subcategory.name|escape:'html':'UTF-8'}" class="img">
-                            {$subcategory.name}
+                        <a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}"
+                           title="{$subcategory.name|escape:'html':'UTF-8'}" class="img">
+                            <span class="home_categories_name">{$subcategory.name}</span>
+
+                            <div class="img_wrap">
+                                <img src="{$link->getCatImageLink($subcategory.link_rewrite, $subcategory.id_image)|escape:'html':'UTF-8'}"
+                                     alt="{$subcategory.name|escape:'html':'UTF-8'}">
+                            </div>
                         </a>
-                        <div class="img_wrap">
-                            <img src="{$link->getCatImageLink($subcategory.link_rewrite, $subcategory.id_image)|escape:'html':'UTF-8'}"
-                                 alt="{$subcategory.name|escape:'html':'UTF-8'}">
-                        </div>
                     </li>
                 {/foreach}
             </ul>

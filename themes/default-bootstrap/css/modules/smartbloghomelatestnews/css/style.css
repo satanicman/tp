@@ -7,6 +7,10 @@
 #latest_news_wrap .sdsblog-box-content {
     padding: 0;
 }
+#latest_news_wrap .sdsblog-box-content a:focus,
+#latest_news_wrap .sdsblog-box-content a:active {
+    outline: 0;
+}
 .sds_blog_post {
     height: auto;
 }
@@ -51,7 +55,7 @@
     left: 50%;
     top: 50%;
     margin-top: -21px;
-    margin-left: -52px;
+    margin-left: -26px;
 }
 .icons-links-wrap .icons-links-link .icon {
     margin: auto;

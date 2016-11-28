@@ -14,8 +14,8 @@
                              </a>
                             <span class="icons-links-wrap">
                                 <span class="icons-links-content clearfix">
-                                    <a href="#" class="icons-links-link link"><i class="icon news-link-icon"></i></a>
-                                    <a href="#" class="icons-links-link search"><i class="icon news-search-icon"></i></a></span>
+                                    <a href="{smartblog::GetSmartBlogLink('smartblog_post',$options)}" class="icons-links-link link"><i class="icon news-link-icon"></i></a>
+                                    {*<a href="#" class="icons-links-link search"><i class="icon news-search-icon"></i></a></span>*}
                             </span>
                         </div>
                         <div class="news_module_content">

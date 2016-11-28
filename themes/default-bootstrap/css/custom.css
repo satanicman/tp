@@ -238,6 +238,12 @@ header .nav {
     padding-left: 0;
     margin: 0;
 }
+@media (min-width: 992px) {
+    .dispNavMnu > li {
+        width: auto;
+        padding: 0;
+    }
+}
 
 .dispNavMnu a {
     color: black;
@@ -2201,6 +2207,43 @@ ul.product_list.list .features-popup {
 }
 
 @media (max-width: 1199px) {
+    .dispNavMnu {
+        padding-right: 0;
+        display: block;
+    }
+    .dispNavMnu > li {
+        float: left !important;
+    }
+    .dispNavMnu a {
+        -webkit-justify-content: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+    }
+    .header_user_info {
+        padding: 5px 0;
+        float: none !important;
+    }
+    .header_user_info a {
+        -webkit-justify-content: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+    }
+    header .nav nav {
+        /*display: block;*/
+    }
+
+    .dispNavMnu .icon {
+        display: none;
+    }
+
+    .dispNavMnu a {
+        font-size: 12px;
+    }
+    .dispNavMnu li:first-of-type a {
+        padding-left: 25px;
+    }
 
 	.tab-heads .tab-head {
     	width: auto;
@@ -2288,6 +2331,9 @@ ul.product_list.list .features-popup {
 }
 
 @media (max-width: 992px) {
+    .dispNavMnu li:first-of-type a {
+        padding-left: 5px;
+    }
 
     #product_comparison .price-percent-reduction {
         top: -150px;
@@ -2351,7 +2397,12 @@ ul.product_list.list .features-popup {
 }
 
 @media (max-width: 767px) {
+    header .nav nav {
+        display: block;
+    }
+    .header_user_info {
 
+    }
     .sf-menu > li span {
         top: 19px;
     }
@@ -2561,6 +2612,20 @@ ul.product_list.list .features-popup {
 }
 
 @media (max-width: 480px) {
+    #reasons > li {
+        display: block;
+    }
+    #reasons .i-wrap {
+        float: none;
+        /*display: block;*/
+        margin: 0 auto;
+    }
+    .reason-description {
+        padding: 5px 0;
+        float: none;
+    }
+    .dispNavMnu > li {
+    }
     .content_sortPagiBar .sortPagiBar #productsSortForm {
         float: left;
     }

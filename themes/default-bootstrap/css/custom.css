@@ -2308,7 +2308,7 @@ ul.product_list.list .features-popup {
         padding: 2px;
     }
 
-    ul > .col-fivecolumns:nth-child(3n+1) {
+    ul > .col-fivecolumns:nth-child(2n+1) {
         clear: both;
     }
 

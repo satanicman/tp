@@ -23,7 +23,7 @@
             <h3 class="sub-title">{l s="В нашем интернет-магазине вы найдете:" mod="homecategories"}</h3>
             <ul class="clearfix row">
                 {foreach from=$subcategories item=subcategory}
-                    <li class="col-lg-3">
+                    <li class="col-lg-3 col-md-3">
                         <a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}"
                            title="{$subcategory.name|escape:'html':'UTF-8'}" class="img">
                             <span class="home_categories_name">{$subcategory.name}</span>

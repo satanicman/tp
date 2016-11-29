@@ -621,7 +621,8 @@ a.remove-after::after {
 #homepage-slider {
     border-bottom: 3px solid #ccff00;
     margin-bottom: 0;
-    height: 429px;
+    /*max-height: 429px;*/
+    /*position: relative;*/
     overflow: hidden;
 }
 

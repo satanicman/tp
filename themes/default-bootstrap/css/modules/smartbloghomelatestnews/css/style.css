@@ -90,7 +90,7 @@
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
-    font-family: "RalewayRegular", serif;
+    font-family: Arial, serif;
 }
 .sds_post_title {
     text-transform: uppercase;
@@ -99,7 +99,7 @@
 }
 .sds_post_title a {
     color: #363636;
-    font-family: "RalewaySemiBold", serif;
+    font-family: Arial, serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -109,12 +109,12 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 20px;
-    font-family: "RalewayRegular", serif;
+    font-family: Arial, serif;
     margin: 0;
 }
 #latest_news_wrap .r_more {
     color: #39c;
-    font-family: "RalewayRegular", serif;
+    font-family: Arial, serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
